@@ -1,0 +1,24 @@
+
+
+<div class="banner">
+	<img id="logo" src=" /static/images/LOGO.jpg">
+
+	<div class="bannerinfo">
+
+	</div>
+</div>
+
+<nav id="menu">
+    <ul class="menu bar">
+        <li class="{% if active_tab == 'tab3' %} active{% endif %}"><a href="{% url 'projects' %}">Projects</a></li>
+        <li class="{% if active_tab == 'tab2' %} active{% endif %}"><a href="{% url 'about' %}">About</a></li>
+        <li class="{% if active_tab == 'tab4' %} active{% endif %}"><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+
+    <a class="toggle-nav" href="#">&#9776;</a>
+
+</nav>
+
+
+
+

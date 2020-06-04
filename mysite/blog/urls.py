@@ -3,6 +3,13 @@ from django.urls import path
 
 urlpatterns = [
     path('', views.PostList.as_view(), name='home'),
-    path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
-]
 
+    path('About/', views.AboutPageView.as_view(), name='about'),
+    path('Projects/', views.ProjectsPageView.as_view(), name='projects'),
+    path('Contact/', views.ContactPageView.as_view(), name='contact'),
+    path('Terms/', views.TermsPageView.as_view(), name='terms'),
+    path('Privacy/', views.PrivacyPageView.as_view(), name='privacy'),
+
+    path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
+
+]
