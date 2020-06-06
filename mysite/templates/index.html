@@ -11,7 +11,7 @@
         <!-- Blog Entries Column -->
         <div class="col-md-8 mt-3 left">
             {% for post in post_list %}
-            <div class="card1 mb-4">
+            <div class="blogpost mb-4">
                 <div class="card-body">
                     <h2 class="card-title">{{ post.title }}</h2>
                     <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
@@ -24,16 +24,15 @@
 
     </div>
 
-
 {% if is_paginated %}
 
   <nav aria-label="Page navigation container"></nav>
   <ul class="pagination justify-content-center">
     {% if page_obj.has_previous %}
-    <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+    <li><a href="?page={{ page_obj.previous_page_number }}" class="buttonp"><span>PREV</span></a></li>
     {% endif %}
     {% if page_obj.has_next %}
-    <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+    <li><a href="?page={{ page_obj.next_page_number }}" class="buttonf"> <span>NEXT</span></a></li>
 
     {% endif %}
   </ul>
