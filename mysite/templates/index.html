@@ -5,39 +5,40 @@
 {% include 'partials/nav-bar.html' with active_tab='tab1' %}
 
 <body class="bodyindex">
-<div class="content">
-<h1 class="heading">Blog</h1>
-    <div class="row">
-        <!-- Blog Entries Column -->
-        <div class="column">
-            {% for post in post_list %}
-            <div class="blogpost">
-                <div class="card-body">
-                    <h2 class="card-title">{{ post.title }}</h2>
-                    <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-                    <p class="card-text">{{post.content|slice:":200"}}</p>
-                    <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
+
+    <div class="content" id="indexcontent">
+    <h1 class="heading">Blog</h1>
+        <div class="row">
+            <!-- Blog Entries Column -->
+            <div class="column">
+                {% for post in post_list %}
+                <div class="blogpost">
+                    <div class="card-body">
+                        <h2 class="card-title">{{ post.title }}</h2>
+                        <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
+                        <p class="card-text">{{post.content|slice:":200"}}</p>
+                        <a href="{% url 'post_detail' post.slug  %}" class="button1">Read More &rarr;</a>
+                    </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
 
+    {% if is_paginated %}
+
+      <nav aria-label="Page navigation container"></nav>
+      <ul class="pagination justify-content-center">
+        {% if page_obj.has_previous %}
+        <li><a href="?page={{ page_obj.previous_page_number }}" class="buttonp"><span>PREV</span></a></li>
+        {% endif %}
+        {% if page_obj.has_next %}
+        <li><a href="?page={{ page_obj.next_page_number }}" class="buttonf"> <span>NEXT</span></a></li>
+
+        {% endif %}
+      </ul>
     </div>
 
-{% if is_paginated %}
-
-  <nav aria-label="Page navigation container"></nav>
-  <ul class="pagination justify-content-center">
-    {% if page_obj.has_previous %}
-    <li><a href="?page={{ page_obj.previous_page_number }}" class="buttonp"><span>PREV</span></a></li>
-    {% endif %}
-    {% if page_obj.has_next %}
-    <li><a href="?page={{ page_obj.next_page_number }}" class="buttonf"> <span>NEXT</span></a></li>
-
-    {% endif %}
-  </ul>
-</div>
-    </body>
+</body>
 {% endif %}
 
 {%endblock%}

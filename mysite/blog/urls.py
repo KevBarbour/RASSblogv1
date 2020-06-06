@@ -9,6 +9,7 @@ urlpatterns = [
     path('Contact/', views.ContactPageView.as_view(), name='contact'),
     path('Terms/', views.TermsPageView.as_view(), name='terms'),
     path('Privacy/', views.PrivacyPageView.as_view(), name='privacy'),
+    path('Disclaimer/', views.DisclaimerPageView.as_view(), name='disclaimer'),
 
     path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
 

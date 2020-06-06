@@ -35,6 +35,9 @@ class PrivacyPageView(TemplateView):
     template_name = "privacy.html"
 
 
+class DisclaimerPageView(TemplateView):
+    template_name = "disclaimer.html"
+
 # Create your views here.
 
 def index(request):
