@@ -1,31 +1,47 @@
 <!DOCTYPE html>
+
+
 {% extends "base.html" %} 
 {% block content %}
 {% include 'partials/nav-bar.html' with active_tab='tab4' %}
 
+
+
+
 <body class="bodycontact">
+
+
+
+
+
 <div class="content">
     <h1 class="heading">Contributors</h1>
+
         <div id="executivebox">
             <div id="exec1">
                 <img id="execpic1" src=" /static/img/portrait1.jpg">
                 <div id="exectext1">
                     <h2>Kevin Barbour</h2>
-                     <h3>Admin</h3>
+                    <h3>Admin</h3>
+                    <h4>kbarbour@rasstech.net</h4>
+                    <h4><a href="https://www.linkedin.com/in/kevbarbour/">linkedin.com/in/kevbarbour/</a></h4>
+                    <button type="button" class="collapsible2">Biography</button>
 
-                    <p>
-                    Kevin is a Graduate of Memorial University of Newfoundland, Joint Major B.Sc degree in Physics and
-                    Applied Geophysics. He is a Veteran of the Canadian Navy after five years of service as a Naval
-                    Warfare Officer. He has worked in the energy industry for over three years, holds numerous certifications, and loves to work.
-                    Kevin spends his free time painting, programming, cycling about England, flying drones, and tech research.
-                    </p>
-                    <a href = "mailto: kbarbour@rasstech.net">Email</a>
-                    <br>
-                    <a href="https://www.linkedin.com/in/kevbarbour/">Linkedin</a>
+                    <div class="content2">
+                      <p>
+                          Kevin is a Graduate of Memorial University of Newfoundland, Joint Major B.Sc degree in Physics and
+                          Applied Geophysics. He is a Veteran of the Canadian Navy after five years of service as a Naval
+                          Warfare Officer. He has worked in the energy industry for over three years, holds numerous certifications, and loves to work.
+                          Kevin spends his free time painting, programming, cycling about England, flying drones, and tech research.
+                      </p>
+                    </div>
+
                 </div>
 
 
             </div>
+
+
 
 <!--           <div id="exec2">
                 <img id="execpic2" src=" /static/img/portrait2.jpg">
@@ -43,6 +59,26 @@
 --!>
         </div>
 </div>
+
+<!--Collapsable profiles in contact page--!>
+
+<script>
+var coll = document.getElementsByClassName("collapsible2");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active2");
+    var content2 = this.nextElementSibling;
+    if (content2.style.display === "block") {
+      content2.style.display = "none";
+    } else {
+      content2.style.display = "block";
+    }
+  });
+}
+</script>
+
 
 </body>
 {%endblock%}

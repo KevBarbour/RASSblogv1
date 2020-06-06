@@ -119,19 +119,23 @@ h3 {
 	font-size: 20px;
     margin: 0 0 5px 0;
 }
+h4 {
+    color: #f46d00;
+    font-weight: bold;
+	font-size: 16px;
+    margin: 0 0 5px 0;
+}
 p {
 	font-size: 16px;
 	margin: 0 0 5px 0;
 }
 
-/* Template backgrounds  -------------------------------------------------------- ----------------------------------------------------*/
+/*------------------------------------------------Template backgrounds------------------------------------------------*/
 
 body {
     color: #ffffff;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: 300;
-    font-size: 15px;
 }
+
 .bodyindex {
     background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/background.gif")  50% 0 no-repeat fixed;
 }
@@ -159,7 +163,7 @@ body {
     margin: 0 10% 0 10%;
 }
 
-/* Navigation Bar  -------------------------------------------------------- ----------------------------------------------------*/
+/* -------------------------------------------------Navigation Bar----------------------------------------------------*/
 
 .banner {
 	background: black;
@@ -186,12 +190,16 @@ body {
     font-size: 42px;
 }
 
-/*-----------------------------------------------------Toggle Button--------------------------------------------------*/
+#title {
+    padding-top: 22px;
+}
+
+/*---Toggle Button---*/
 .toggle-nav {
     display:none;
 }
 
-/*-------------------------------------------------------------Menu---------------------------------------------------*/
+/*---Menu---*/
 @media screen and (min-width: 860px) {
     .menu {
         height:38px;
@@ -204,6 +212,7 @@ body {
 }
 .menu ul {
 }
+
 .menu li {
     display: block;
     width: 120px ;
@@ -335,7 +344,8 @@ body {
         color:#66a992;
     }
 }
-/*------------------------------------------------------Button--------------------------------------------------------*/
+
+/*------------------------------------------------------Buttons-------------------------------------------------------*/
 .buttonp {
   display: inline-block;
   border-radius: 4px;
@@ -416,19 +426,26 @@ body {
   right: 0;
 }
 
-/*------------------------------------------------------Index Page----------------------------------------------------*/
+/*-------------------------------------------------Blog/Index Page----------------------------------------------------*/
+
+
+.row {
+/*    border: 2px solid red; */
+}
+
+.blogpost {
+    color: black;
+    background: white;
+    padding: 15px 10px 15px 20px;
+    margin: 0 0 20px 0;
+    border: 2px solid green;
+    border-radius: 25px;
+     width: 60%;
+}
 
 .card-title {
      color: #f46d00;
-
 }
-
-.page-link {
-    color: #fff;
-    background-color: #f00000;
-    border-color: #dc281e;
-}
-
 
 
 
@@ -508,17 +525,20 @@ body {
 /*------------------------------------------------------About Page----------------------------------------------------*/
 
 
-
 /*-----------------------------------------------------Contact page---------------------------------------------------*/
 
 #executivebox {
     border: 0 solid white;
     padding: 0 0 250px 0;
+    border-radius: 25px;
 }
 #exec1{
+    background: white;
+    color: black;
     float: left;
-    border: 2px solid red;
+
     font-size: 12px;
+    border-radius: 25px 25px 20px 20px;
 
 }
 #execpic1{
@@ -526,10 +546,20 @@ body {
     width: auto;
     max-width: 750px;
     max-height: 150px;
-	margin: 10px 20px 10px 20px;
+	margin: 20px 20px 15px 20px;
     overflow: visible;
-    border: 3px solid white
+    border: 3px solid #f46d00;
+    float: left;
+    border-radius: 25px;
+
 }
+#exectext1{
+
+    width: 500px;
+    padding: 40px 0 0 0;
+    border-radius: 25px;
+}
+
 
 /*#exec2{
     float: left;
@@ -561,6 +591,32 @@ body {
     overflow: visible;
     border: 3px solid white
 }*/
+
+.collapsible2 {
+    background-color: #f46d00;
+    color: white;
+    cursor: pointer;
+    padding: 0px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0 ;
+}
+.collapsible2:hover{
+    background-color: #9a4300;
+}
+.active2:hover {
+    background-color: #9a4300;
+    border-radius: 0;
+}
+
+.content2 {
+    padding: 10px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+}
 
 /* --------------------------------------------------------Footer-----------------------------------------------------*/
 .footer {
