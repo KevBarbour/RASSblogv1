@@ -1,26 +1,12 @@
 <!DOCTYPE html>
 {% extends "base.html" %} 
 {% block content %}
-<style>
-    body {
-        font-family: "Roboto", sans-serif;
-        font-size: 18px;
-        background-color: #fdfdfd;
-    }
-    
-    .head_text {
-        color: white;
-    }
-    
-    .card {
-        box-shadow: 0 16px 48px #E3E7EB;
-    }
 
-</style>
 {% include 'partials/nav-bar.html' with active_tab='tab1' %}
 
-
-<div class="container">
+<body class="bodyindex">
+<div class="content">
+<h1 class="heading">Blog</h1>
     <div class="row">
         <!-- Blog Entries Column -->
         <div class="col-md-8 mt-3 left">
@@ -37,7 +23,7 @@
         </div>
 
     </div>
-</div>
+
 
 {% if is_paginated %}
 
@@ -51,8 +37,8 @@
 
     {% endif %}
   </ul>
-  </nav>
 </div>
+    </body>
 {% endif %}
 
 {%endblock%}

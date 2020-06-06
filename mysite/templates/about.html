@@ -1,31 +1,12 @@
 <!DOCTYPE html>
-{% extends "base.html" %} 
-
+{% extends "base.html" %}
 {% block content %}
 
-<style>
-    body {
-        font-family: "Roboto", sans-serif;
-        font-size: 18px;
-        background-color: #fdfdfd;
-    }
-    
-    .head_text {
-        color: white;
-    }
-    
-    .card {
-        box-shadow: 0 16px 48px #E3E7EB;
-    }
-</style>
+{% include 'partials/nav-bar.html' with active_tab='tab2' %}
 
 <body class="bodyabout">
-    {% include 'partials/nav-bar.html' with active_tab='tab2' %}
 	<div class="content">
-		<h1 class="heading">
-		About
-		</h1>
-		
+		<h1 class="heading">About</h1>
 		<p>
             <B>Remote Automation Sensor Surveys</B> was previously used as a small subcontracting corporation for the renewable
             energy sector in Canada, it has since relocated to the United Kingdom (late 2019). RASS will no longer be
@@ -45,12 +26,7 @@
             <p>
                 The goal of RASS is to create innovation in technology, and to be a venue for like minded contributors.
             </p>
-
-
-
     </div>
-	
-
 
 {% endblock %}
 </body>
