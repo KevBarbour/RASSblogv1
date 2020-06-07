@@ -137,28 +137,44 @@ body {
 }
 
 .bodyindex {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/background.gif")  50% 0 no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/sea.jpg")  75% 0 no-repeat fixed;
+    background-position: center;
+    background-size: cover;
 }
 .bodydetail {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/background.gif")  50% 0 no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/sea.jpg")  75% 0 no-repeat fixed;
+    background-position: center;
+    background-size: cover;
 }
 .bodyprojects {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/truck.jpg") 50% 0 no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/rov4.jpg") 75% 0 no-repeat fixed;
+    background-position: center;
+    background-size: cover;
 }
 .bodyabout {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/drillingrig.gif") 50% 0 no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/survey3.jpg") 75% 0 no-repeat fixed;
+    background-position: center;
+    background-size: cover;
 }
 .bodycontact {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/phone.jpg") 50% 0 no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/sea1.jpg") 75% 0 no-repeat fixed;
+    background-position: center;
+    background-size: cover;
 }
 .bodyterms {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/phone.jpg") 50% 0 no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/digger4.jpg") 75% 0 no-repeat fixed;
+    background-position: center;
+    background-size: cover;
 }
 .bodyprivacy {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("static/img/phone.jpg") 50% 0 no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/rov5.jpg") 75% 0 no-repeat fixed;
+    background-position: center;
+    background-size: cover;
 }
 .bodydisclaimer {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("static/img/phone.jpg") 50% 0 no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/uxo3.jpg") 75% 0 no-repeat fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 .content {
