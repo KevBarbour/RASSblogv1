@@ -130,6 +130,7 @@ p {
 	margin: 0 0 5px 0;
 }
 
+
 /*------------------------------------------------Template backgrounds------------------------------------------------*/
 
 body {
@@ -137,28 +138,44 @@ body {
 }
 
 .bodyindex {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/sea.jpg")  50% 0 no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/sea2.jpg")  75% 0 no-repeat fixed;
+    background-position: center;
+    background-size: cover;
 }
 .bodydetail {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/sea.jpg")  50% 0 no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/sea2.jpg")  75% 0 no-repeat fixed;
+    background-position: center;
+    background-size: cover;
 }
 .bodyprojects {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/rov4.jpg") 50% 0 no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/rov42.jpg") 75% 0 no-repeat fixed;
+    background-position: center;
+    background-size: cover;
 }
 .bodyabout {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/survey3.jpg") 50% 0 no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/survey32.jpg") 75% 0 no-repeat fixed;
+    background-position: center;
+    background-size: cover;
 }
 .bodycontact {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/sea1.jpg") 50% 0 no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/uxo32.jpg") 75% 0 no-repeat fixed;
+    background-position: center;
+    background-size: cover;
 }
 .bodyterms {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/digger4.jpg") 50% 0 no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/digger42.jpg") 75% 0 no-repeat fixed;
+    background-position: center;
+    background-size: cover;
 }
 .bodyprivacy {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("static/img/rov5.jpg") 50% 0 no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/rov52.jpg") 75% 0 no-repeat fixed;
+    background-position: center;
+    background-size: cover;
 }
 .bodydisclaimer {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("static/img/uxo3.jpg") 50% 0 no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/static/img/uxo32.jpg") 75% 0 no-repeat fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 .content {
@@ -170,6 +187,14 @@ body {
 }
 
 /* -------------------------------------------------Navigation Bar----------------------------------------------------*/
+
+.totalnav {
+    	background: black;
+	padding:0 0 0 0;
+	color: #FAEBD7;
+	font-weight: bold;
+	font-size: 50px;
+}
 
 .banner {
 	background: black;
@@ -287,18 +312,22 @@ body {
     .wrap {
         width:90%;
     }
+
 }
 @media screen and (max-width: 970px) {
     .search-form input {
         width:120px;
     }
+
 }
 @media screen and (max-width: 860px) {
+
+
     .menu {
         position:relative;
         display:inline-block;
     }
-    .menu ul.active {
+    .menu ul.active1 {
         display:none;
     }
     .menu ul {
@@ -333,6 +362,7 @@ body {
         display:block;
     }
     .toggle-nav {
+        text-decoration: none;
         padding:20px;
         float:left;
         display:inline-block;
@@ -345,9 +375,15 @@ body {
         transition:color linear 0.15s;
     }
     .toggle-nav:hover,
-    .toggle-nav.active {
+    .toggle-nav.active1 {
         text-decoration:none;
         color:#66a992;
+    }
+    .banner {
+        float:left;
+    }
+    #title {
+    display: none;
     }
 }
 

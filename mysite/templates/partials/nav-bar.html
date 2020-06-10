@@ -1,22 +1,17 @@
-{% load static %}
-
-<script src="{% static "js/mysite-jquery.js" %}"></script>
-<script src="{% static "js/jquery-3.2.1.js" %}"></script>
-<script type="text/javascript" src="{{ STATIC_URL }} js/jquery-3.2.1.js"></script>
-
-<div class="banner">
-	<img id="logo" src=" /static/img/LOGO.png" alt="">
-	<div class="bannerinfo">
-        <h1 id="title">Remote Automation <br> Sensors Surveys</h1>
-	</div>
+<div id="navbarb"></div>
+<div class="totalnav">
+    <div class="banner">
+	    <img id="logo" src=" /static/img/LOGO.png" alt="">
+	    <div class="bannerinfo">
+            <h1 id="title">Remote Automation <br> Sensors Surveys</h1>
+	    </div>
+    </div>
+<button class="toggle-nav" >☰</button>
+    <nav id="menu">
+        <ul class="menu bar">
+            <li class="{% if active_tab == 'tab1' %} active{% endif %}"><a href="{% url 'home' %}">Blog</a></li>
+            <li class="{% if active_tab == 'tab2' %} active{% endif %}"><a href="{% url 'about' %}">About</a></li>
+            <li class="{% if active_tab == 'tab3' %} active{% endif %}"><a href="{% url 'projects' %}">Projects</a></li>
+            <li class="{% if active_tab == 'tab4' %} active{% endif %}"><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
 </div>
-
-<nav id="menu">
-    <ul class="menu bar">
-        <li class="{% if active_tab == 'tab1' %} active{% endif %}"><a href="{% url 'home' %}">Blog</a></li>
-        <li class="{% if active_tab == 'tab2' %} active{% endif %}"><a href="{% url 'about' %}">About</a></li>
-        <li class="{% if active_tab == 'tab3' %} active{% endif %}"><a href="{% url 'projects' %}">Projects</a></li>
-        <li class="{% if active_tab == 'tab4' %} active{% endif %}"><a href="{% url 'contact' %}">Contact</a></li>
-    </ul>
-    <a class="toggle-nav" href="#">&#9776;</a>
-</nav>
