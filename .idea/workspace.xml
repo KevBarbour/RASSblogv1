@@ -33,7 +33,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kkeeper-master/kkeeper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -55,6 +55,7 @@
       <workItem from="1591447872211" duration="35321000" />
       <workItem from="1591485681621" duration="296000" />
       <workItem from="1591554588554" duration="9632000" />
+      <workItem from="1591877211474" duration="3465000" />
     </task>
     <servers />
   </component>
