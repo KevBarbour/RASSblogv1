@@ -248,7 +248,7 @@ body {
 .menu li {
     display: block;
     width: 120px ;
-    padding: 0 0 1px 0;
+    padding: 0 0 0 0;
     float:left;
     list-style:none;
     font-size:17px;
@@ -260,7 +260,7 @@ body {
     text-decoration:none;
     text-align:center;
     display: block;
-    padding:10px 25px 11px 25px;
+    padding:10px 25px 12px 25px;
     text-shadow:0 1px 0 rgba(0,0,0,0.5);
     color:black;
     transition:background linear 0.15s;
@@ -646,7 +646,6 @@ a.button1:hover{
     background: white;
     color: black;
     float: left;
-
     font-size: 12px;
     border-radius: 25px 25px 20px 20px;
 
